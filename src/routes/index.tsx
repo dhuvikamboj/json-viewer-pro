@@ -31,38 +31,67 @@ function Card({ p }: { p: Product }) {
   ].filter(([, v]) => v && v.trim() !== "") as [string, string][];
 
   return (
-    <article className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden flex flex-col">
-      <header className="px-6 pt-6 pb-3 text-center">
-        <h2 className="text-2xl font-extrabold tracking-tight text-foreground uppercase">
+    <article
+      className="rounded-2xl overflow-hidden flex flex-col shadow-sm"
+      style={{
+        backgroundColor: "#cfcfcf",
+        backgroundImage:
+          "radial-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px)",
+        backgroundSize: "3px 3px, 5px 5px",
+        backgroundPosition: "0 0, 1px 1px",
+      }}
+    >
+      <header className="px-6 pt-7 pb-2 text-center">
+        <h2
+          className="text-3xl text-white uppercase leading-none"
+          style={{
+            fontFamily:
+              "'Fredoka', 'Baloo 2', 'Nunito', system-ui, sans-serif",
+            fontWeight: 700,
+            letterSpacing: "0.02em",
+            textShadow: "0 2px 0 rgba(0,0,0,0.15)",
+          }}
+        >
           Decor Chronicle
         </h2>
-        <div className="mt-2 text-xs text-muted-foreground space-y-0.5">
-          <p>🌐 www.decorchronicle.com</p>
-          <p>📱 +91 8595626577</p>
+        <div className="mt-3 text-[13px] text-neutral-800 space-y-1">
+          <p className="flex items-center justify-center gap-2">
+            <span className="inline-block w-4 h-4 rounded-full bg-neutral-700" />
+            <span>www.decorchronicle.com</span>
+          </p>
+          <p className="flex items-center justify-center gap-2">
+            <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-green-500 text-white text-[9px] font-bold">
+              W
+            </span>
+            <span>+91 8595626577</span>
+          </p>
         </div>
       </header>
 
-      <div className="mx-6 rounded-2xl bg-neutral-900 aspect-[3/4] overflow-hidden flex items-center justify-center">
+      <div className="mx-6 mt-3 rounded-[28px] bg-neutral-900 aspect-[3/4] overflow-hidden">
         <img
           src={sampleImg}
           alt={`Product ${p.item_no}`}
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-cover"
           loading="lazy"
         />
       </div>
 
-      <div className="px-6 py-5 flex-1 flex flex-col">
-        <dl className="space-y-1 text-sm uppercase tracking-wide flex-1">
+      <div className="px-8 pt-5 pb-7 flex-1 flex flex-col items-center text-center">
+        <dl className="space-y-1 text-[15px] uppercase tracking-wide flex-1">
           {specs.map(([k, v]) => (
-            <div key={k} className="flex gap-2">
-              <dt className="font-bold text-foreground">{k} :</dt>
-              <dd className="text-foreground/80">{v}</dd>
+            <div key={k}>
+              <span className="font-extrabold text-neutral-900">{k} :</span>{" "}
+              <span className="text-neutral-900">{v}</span>
             </div>
           ))}
         </dl>
 
-        <div className="mt-4 flex justify-center">
-          <span className="bg-neutral-900 text-rose-300 font-bold text-xl px-8 py-2 rounded-full">
+        <div className="mt-5">
+          <span
+            className="inline-block bg-neutral-900 px-10 py-2.5 rounded-full text-2xl font-extrabold"
+            style={{ color: "#a64367" }}
+          >
             {Number(p.price).toLocaleString("en-IN")}/-
           </span>
         </div>
