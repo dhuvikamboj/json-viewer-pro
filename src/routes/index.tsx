@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import products from "@/data/products.json";
 import sampleImg from "@/assets/sample-card.jpeg";
+import { exportProductsPdf } from "@/lib/export-pdf";
 
 export const Route = createFileRoute("/")({
   component: Index,
