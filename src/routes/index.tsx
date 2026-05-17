@@ -103,7 +103,7 @@ function Card({ p }: { p: Product }) {
 }
 
 function Index() {
-  const data = products as ExportProduct[];
+  const data = products as Product[];
   const [exporting, setExporting] = useState(false);
 
   const handleExport = async () => {
