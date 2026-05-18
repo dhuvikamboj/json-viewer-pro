@@ -9,7 +9,7 @@
         "materials": "TIFFANY",
         "price": "29000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_2.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_2.png"
     },
     {
         "item_no": "9027-3",
@@ -21,7 +21,7 @@
         "materials": "TIFFNAY",
         "price": "29000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_3.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_3.png"
     },
     {
         "item_no": "1032-3",
@@ -33,7 +33,7 @@
         "materials": "",
         "price": "11000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_4.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_4.png"
     },
     {
         "item_no": "CD4106-1AM",
@@ -45,7 +45,7 @@
         "materials": "GLASS",
         "price": "7000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_5.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_5.png"
     },
     {
         "item_no": "CD4106-1SM",
@@ -57,7 +57,7 @@
         "materials": "GLASS",
         "price": "7000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_6.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_6.png"
     },
     {
         "item_no": "CD024-1AM",
@@ -69,7 +69,7 @@
         "materials": "GLASS",
         "price": "7500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_7.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_7.png"
     },
     {
         "item_no": "CD024-1SM",
@@ -81,7 +81,7 @@
         "materials": "GLASS",
         "price": "7500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_8.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_8.png"
     },
     {
         "item_no": "CD023-1AM",
@@ -93,7 +93,7 @@
         "materials": "GLASS",
         "price": "6000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_9.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_9.png"
     },
     {
         "item_no": "CD023-1SM",
@@ -105,7 +105,7 @@
         "materials": "GLASS",
         "price": "6000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_10.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_10.png"
     },
     {
         "item_no": "CD4313-3A",
@@ -117,7 +117,7 @@
         "materials": "ACRYLIC",
         "price": "16000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_11.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_11.png"
     },
     {
         "item_no": "A05",
@@ -129,7 +129,7 @@
         "materials": "METAL",
         "price": "3900",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_12.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_12.png"
     },
     {
         "item_no": "A03",
@@ -141,7 +141,7 @@
         "materials": "METAL+GLASS",
         "price": "4200",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_13.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_13.png"
     },
     {
         "item_no": "21702B-4+3+2",
@@ -153,7 +153,7 @@
         "materials": "",
         "price": "8000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_14.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_14.png"
     },
     {
         "item_no": "21723B-150",
@@ -165,7 +165,7 @@
         "materials": "",
         "price": "6500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_15.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_15.png"
     },
     {
         "item_no": "21723B-200",
@@ -177,7 +177,7 @@
         "materials": "",
         "price": "7500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_16.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_16.png"
     },
     {
         "item_no": "CD4272-3A",
@@ -189,7 +189,7 @@
         "materials": "GLASS+ METAL",
         "price": "16000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_17.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_17.png"
     },
     {
         "item_no": "CD028-3",
@@ -201,7 +201,7 @@
         "materials": "GLASS+METAL",
         "price": "10000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_18.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_18.png"
     },
     {
         "item_no": "CD68-3",
@@ -213,7 +213,7 @@
         "materials": "GLASS+METAL",
         "price": "16200",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_19.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_19.png"
     },
     {
         "item_no": "CD4296-3",
@@ -225,7 +225,7 @@
         "materials": "",
         "price": "13000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_20.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_20.png"
     },
     {
         "item_no": "CD3614-1AM",
@@ -237,7 +237,7 @@
         "materials": "GLASS+METAL",
         "price": "11000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_21.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_21.png"
     },
     {
         "item_no": "CD3614-1SM",
@@ -249,7 +249,7 @@
         "materials": "GLASS+METAL",
         "price": "11000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_22.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_22.png"
     },
     {
         "item_no": "CD3349-1AM",
@@ -261,7 +261,7 @@
         "materials": "GLASS+METAL",
         "price": "9000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_23.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_23.png"
     },
     {
         "item_no": "CD3349-1SM",
@@ -273,7 +273,7 @@
         "materials": "GLASS+METAL",
         "price": "9000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_24.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_24.png"
     },
     {
         "item_no": "D2310-1 (H/L)",
@@ -285,7 +285,7 @@
         "materials": "CRYSTAL+MET AL",
         "price": "14000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_25.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_25.png"
     },
     {
         "item_no": "7645-1P",
@@ -297,7 +297,7 @@
         "materials": "METAL+GLAAS",
         "price": "7800",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_26.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_26.png"
     },
     {
         "item_no": "826-1P",
@@ -309,7 +309,7 @@
         "materials": "METAL+GLASS",
         "price": "6000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_27.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_27.png"
     },
     {
         "item_no": "B9524-1AM",
@@ -321,7 +321,7 @@
         "materials": "GLASS+METAL",
         "price": "5400",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_28.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_28.png"
     },
     {
         "item_no": "B9524-1SM",
@@ -333,7 +333,7 @@
         "materials": "GLASS+METAL",
         "price": "5400",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_29.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_29.png"
     },
     {
         "item_no": "B9765-1AM",
@@ -345,7 +345,7 @@
         "materials": "GLASS+METAL",
         "price": "7000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_30.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_30.png"
     },
     {
         "item_no": "B9765-1SM",
@@ -357,7 +357,7 @@
         "materials": "GLASS+METAL",
         "price": "7000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_31.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_31.png"
     },
     {
         "item_no": "B024-1AM",
@@ -369,7 +369,7 @@
         "materials": "GLASS+METAL",
         "price": "8000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_32.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_32.png"
     },
     {
         "item_no": "B024-1SM",
@@ -381,7 +381,7 @@
         "materials": "GLASS+METAL",
         "price": "8000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_33.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_33.png"
     },
     {
         "item_no": "B029-1",
@@ -393,7 +393,7 @@
         "materials": "GLASS+METAL",
         "price": "5000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_34.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_34.png"
     },
     {
         "item_no": "B5216-1",
@@ -405,7 +405,7 @@
         "materials": "GLASS+CERAMIC",
         "price": "4200",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_35.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_35.png"
     },
     {
         "item_no": "B2242-1",
@@ -417,7 +417,7 @@
         "materials": "METAL+CRSYTAL",
         "price": "5500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_36.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_36.png"
     },
     {
         "item_no": "D2310-1 (W/L)",
@@ -429,7 +429,7 @@
         "materials": "",
         "price": "14500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_37.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_37.png"
     },
     {
         "item_no": "FGD7169-11",
@@ -441,7 +441,7 @@
         "materials": "GLASS+METAL",
         "price": "13750",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_38.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_38.png"
     },
     {
         "item_no": "FGD7205-8",
@@ -453,7 +453,7 @@
         "materials": "GLASS+METAL",
         "price": "11000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_39.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_39.png"
     },
     {
         "item_no": "6399-36 GD",
@@ -465,7 +465,7 @@
         "materials": "CRSYTAL",
         "price": "103000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_40.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_40.png"
     },
     {
         "item_no": "6399-27 GD",
@@ -477,7 +477,7 @@
         "materials": "CRSYTAL",
         "price": "77500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_41.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_41.png"
     },
     {
         "item_no": "8838-800",
@@ -489,7 +489,7 @@
         "materials": "CRSYTAL+METAL",
         "price": "70000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_42.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_42.png"
     },
     {
         "item_no": "8085-D600mm",
@@ -501,7 +501,7 @@
         "materials": "CRYSTAL",
         "price": "38500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_43.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_43.png"
     },
     {
         "item_no": "8088- L1200*600mm",
@@ -513,7 +513,7 @@
         "materials": "CRYSTAL",
         "price": "55000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_44.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_44.png"
     },
     {
         "item_no": "8095- L1500*400mm",
@@ -525,7 +525,7 @@
         "materials": "GLASS",
         "price": "108000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_45.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_45.png"
     },
     {
         "item_no": "8093- L1200*600mm",
@@ -537,7 +537,7 @@
         "materials": "GLASS",
         "price": "77000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_46.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_46.png"
     },
     {
         "item_no": "8005-1m",
@@ -549,7 +549,7 @@
         "materials": "ACRYLIC",
         "price": "15000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_47.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_47.png"
     },
     {
         "item_no": "8005-1.5m",
@@ -561,7 +561,7 @@
         "materials": "ACRYLIC",
         "price": "24000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_48.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_48.png"
     },
     {
         "item_no": "AL1038-M-PL",
@@ -573,7 +573,7 @@
         "materials": "METAL+CRSYTAL",
         "price": "165000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_49.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_49.png"
     },
     {
         "item_no": "AL1039-PL",
@@ -585,7 +585,7 @@
         "materials": "METAL+CRSYTAL",
         "price": "180000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_50.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_50.png"
     },
     {
         "item_no": "11045",
@@ -597,7 +597,7 @@
         "materials": "METAL+CRYSTAL",
         "price": "74000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_51.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_51.png"
     },
     {
         "item_no": "994-L1800",
@@ -609,7 +609,7 @@
         "materials": "GLASS+METAL",
         "price": "285000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_52.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_52.png"
     },
     {
         "item_no": "1006-L1600*W500*H700",
@@ -621,7 +621,7 @@
         "materials": "GLASS",
         "price": "172000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_53.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_53.png"
     },
     {
         "item_no": "ST-D2114-12",
@@ -633,7 +633,7 @@
         "materials": "CRSYTAL+METAL",
         "price": "74500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_54.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_54.png"
     },
     {
         "item_no": "6503-16",
@@ -645,7 +645,7 @@
         "materials": "GLASS",
         "price": "27000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_55.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_55.png"
     },
     {
         "item_no": "8802-5",
@@ -657,7 +657,7 @@
         "materials": "GLASS+METAL",
         "price": "11000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_56.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_56.png"
     },
     {
         "item_no": "8802-24 A",
@@ -669,7 +669,7 @@
         "materials": "GLASS+METAL",
         "price": "47500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_57.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_57.png"
     },
     {
         "item_no": "9611-8",
@@ -681,7 +681,7 @@
         "materials": "ACRYLIC",
         "price": "24500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_58.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_58.png"
     },
     {
         "item_no": "9611-12+6",
@@ -693,7 +693,7 @@
         "materials": "ACRYLIC",
         "price": "45500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_59.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_59.png"
     },
     {
         "item_no": "9612-8",
@@ -705,7 +705,7 @@
         "materials": "ACRYLIC+FABRIC",
         "price": "24500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_60.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_60.png"
     },
     {
         "item_no": "9612-12+6",
@@ -717,7 +717,7 @@
         "materials": "ACRYLIC+FABRIC",
         "price": "45500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_61.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_61.png"
     },
     {
         "item_no": "9613-8",
@@ -729,7 +729,7 @@
         "materials": "ACRYLIC",
         "price": "24500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_62.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_62.png"
     },
     {
         "item_no": "9613-12+6",
@@ -741,7 +741,7 @@
         "materials": "ACRYLIC",
         "price": "45500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_63.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_63.png"
     },
     {
         "item_no": "606-8",
@@ -753,7 +753,7 @@
         "materials": "METAL+FABRI C",
         "price": "35000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_64.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_64.png"
     },
     {
         "item_no": "606-10+5",
@@ -765,7 +765,7 @@
         "materials": "METAL+FABRI C",
         "price": "64000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_65.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_65.png"
     },
     {
         "item_no": "606-15+10+5",
@@ -777,7 +777,7 @@
         "materials": "METAL+FABRI C",
         "price": "143500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_66.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_66.png"
     },
     {
         "item_no": "D21725-L1000 FGD",
@@ -789,7 +789,7 @@
         "materials": "",
         "price": "19500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_67.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_67.png"
     },
     {
         "item_no": "D21725-L1000 RGD",
@@ -801,7 +801,7 @@
         "materials": "",
         "price": "19500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_68.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_68.png"
     },
     {
         "item_no": "21702B-7",
@@ -813,7 +813,7 @@
         "materials": "",
         "price": "23000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_69.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_69.png"
     },
     {
         "item_no": "D21724-3C",
@@ -825,7 +825,7 @@
         "materials": "",
         "price": "15000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_70.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_70.png"
     },
     {
         "item_no": "21723-5C",
@@ -837,7 +837,7 @@
         "materials": "",
         "price": "51500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_71.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_71.png"
     },
     {
         "item_no": "72854-M",
@@ -849,7 +849,7 @@
         "materials": "ACRYLIC+METAL +CRYSTAL",
         "price": "48000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_72.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_72.png"
     },
     {
         "item_no": "21801-6+6",
@@ -861,7 +861,7 @@
         "materials": "",
         "price": "17500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_73.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_73.png"
     },
     {
         "item_no": "2176-L4",
@@ -873,7 +873,7 @@
         "materials": "",
         "price": "15000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_74.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_74.png"
     },
     {
         "item_no": "H2502-L950*450",
@@ -885,7 +885,7 @@
         "materials": "CRYSTAL+METAL",
         "price": "80000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_75.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_75.png"
     },
     {
         "item_no": "8838-1200",
@@ -897,7 +897,7 @@
         "materials": "CRYSTAL",
         "price": "152500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_76.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_76.png"
     },
     {
         "item_no": "7301-1200",
@@ -909,7 +909,7 @@
         "materials": "CRYSTAL",
         "price": "210000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_77.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_77.png"
     },
     {
         "item_no": "1179-1200 1800",
@@ -921,7 +921,7 @@
         "materials": "CRYSTAL+METAL",
         "price": "133500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_78.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_78.png"
     },
     {
         "item_no": "106-1200",
@@ -933,7 +933,7 @@
         "materials": "CRYSTAL",
         "price": "142000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_79.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_79.png"
     },
     {
         "item_no": "9100- D800*H3000mm",
@@ -945,7 +945,7 @@
         "materials": "GLASS",
         "price": "150000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_80.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_80.png"
     },
     {
         "item_no": "69044- D1000*H3000",
@@ -957,7 +957,7 @@
         "materials": "GLASS",
         "price": "310000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_81.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_81.png"
     },
     {
         "item_no": "21704-11C",
@@ -969,7 +969,7 @@
         "materials": "",
         "price": "73500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_82.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_82.png"
     },
     {
         "item_no": "21704-9C",
@@ -981,7 +981,7 @@
         "materials": "",
         "price": "53000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_83.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_83.png"
     },
     {
         "item_no": "21704-7H",
@@ -993,7 +993,7 @@
         "materials": "",
         "price": "32000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_84.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_84.png"
     },
     {
         "item_no": "ST-D2224-10",
@@ -1005,7 +1005,7 @@
         "materials": "CRSYTAL",
         "price": "47000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_85.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_85.png"
     },
     {
         "item_no": "21770-7D",
@@ -1017,7 +1017,7 @@
         "materials": "",
         "price": "48500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_86.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_86.png"
     },
     {
         "item_no": "93231- 1000*H1650",
@@ -1029,7 +1029,7 @@
         "materials": "CRYSTAL",
         "price": "280000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_87.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_87.png"
     },
     {
         "item_no": "CD4105-11",
@@ -1041,7 +1041,7 @@
         "materials": "GLASS+METAL",
         "price": "53500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_88.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_88.png"
     },
     {
         "item_no": "8088- D800*H3000mm",
@@ -1053,7 +1053,7 @@
         "materials": "GLASS",
         "price": "71500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_89.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_89.png"
     },
     {
         "item_no": "1003-6",
@@ -1065,7 +1065,7 @@
         "materials": "ACRYLIC+METAL",
         "price": "21500",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_90.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_90.png"
     },
     {
         "item_no": "1528",
@@ -1077,7 +1077,7 @@
         "materials": "ACRYLIC",
         "price": "30000",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_91.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_91.png"
     },
     {
         "item_no": "X9001-4",
@@ -1089,6 +1089,6 @@
         "materials": "ACRYLIC",
         "price": "3650",
         "tag_id": "C14",
-        "image_path": "templates\\src\\product_images\\Decorative Lamps_C14\\page_92.png"
+        "image_path": "templates/src/product_images/Decorative Lamps_C14/page_92.png"
     }
 ]

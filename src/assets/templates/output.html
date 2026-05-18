@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Decor Chronicle</title>
+
+<style>
+
+@page{
+    size:A4;
+    margin:0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:210mm;
+    height:297mm;
+    overflow:hidden;
+
+    font-family:Arial, sans-serif;
+
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+}
+
+.page{
+    position:relative;
+
+    width:210mm;
+    height:297mm;
+
+    overflow:hidden;
+
+    background-image:url("src/background.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.logo-title{
+    position:absolute;
+
+    top:10mm;
+    left:0;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:27mm;
+    font-weight:900;
+
+    color:#ffffff;
+
+    letter-spacing:1px;
+}
+
+
+/* =========================
+   WEBSITE
+========================= */
+
+.website-row{
+    position:absolute;
+
+    top:42mm;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:4mm;
+
+    font-size:7.5mm;
+    color:#000;
+}
+
+.website-icon{
+    width:9mm;
+    height:9mm;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-row{
+    position:absolute;
+
+    top:54mm;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:4mm;
+
+    font-size:7.5mm;
+    color:#000;
+}
+
+.whatsapp-icon{
+    width:9mm;
+    height:9mm;
+}
+
+
+/* =========================
+   PRODUCT IMAGE BOX
+========================= */
+
+.product-box{
+
+    position:absolute;
+
+    top:72mm;
+    left:22mm;
+
+    width:166mm;
+    height:138mm;
+
+    border-radius:20mm;
+
+    overflow:hidden;
+
+    background:#000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.product-image{
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details{
+
+    position:absolute;
+
+    top:222mm;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:3mm;
+}
+
+
+.detail-row{
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:8mm;
+    font-weight:900;
+
+    color:#000;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    line-height:1.2;
+
+    padding-left:10mm;
+    padding-right:10mm;
+
+    word-break:break-word;
+}
+
+
+/* =========================
+   PRICE BOX
+========================= */
+
+.price-box{
+
+    position:absolute;
+
+    bottom:18mm;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    min-width:95mm;
+
+    padding:
+        5mm
+        12mm;
+
+    border-radius:12mm;
+
+    background:
+        radial-gradient(circle at top, #2c2c35, #17171b);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:
+        inset 0 0 12px rgba(255,255,255,0.05),
+        0 4px 20px rgba(0,0,0,0.35);
+}
+
+.price-text{
+
+    font-size:16mm;
+    font-weight:900;
+
+    color:#965B85;
+
+    letter-spacing:1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+
+    <!-- TITLE -->
+    <div class="logo-title">
+        DECOR CHRONICLE
+    </div>
+
+
+    <!-- WEBSITE -->
+    <div class="website-row">
+
+        <img
+            class="website-icon"
+            src="src/globe.png"
+        >
+
+        <div>
+            www.decorchronicle.com
+        </div>
+
+    </div>
+
+
+    <!-- WHATSAPP -->
+    <div class="whatsapp-row">
+
+        <img
+            class="whatsapp-icon"
+            src="src/whatsapp.png"
+        >
+
+        <div>
+            +91 8595626577
+        </div>
+
+    </div>
+
+
+
+    <!-- PRODUCT IMAGE -->
+    <div class="product-box">
+
+        <img
+            class="product-image"
+            src="product.jpg"
+        >
+
+    </div>
+
+
+
+    <!-- DETAILS -->
+    <div class="details">
+
+        
+
+            
+
+                <div class="detail-row">
+                    ITEM NO : 1032-3
+                </div>
+
+            
+
+        
+
+            
+
+                <div class="detail-row">
+                    NO OF LAMPS : 3
+                </div>
+
+            
+
+        
+
+            
+
+                <div class="detail-row">
+                    LIGHT SOURCE : BULB
+                </div>
+
+            
+
+        
+
+            
+
+                <div class="detail-row">
+                    FINISH : WOODEN +WHITE+FABRIC
+                </div>
+
+            
+
+        
+
+            
+
+                <div class="detail-row">
+                    TAG ID : C14
+                </div>
+
+            
+
+        
+
+    </div>
+
+
+
+    <!-- PRICE -->
+    <div class="price-box">
+
+        <div class="price-text">
+            ₹11,000/-
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

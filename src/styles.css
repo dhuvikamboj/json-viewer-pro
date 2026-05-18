@@ -142,3 +142,74 @@
     color: var(--color-foreground);
   }
 }
+/* Image sizing and squircle style for screen */
+.product-image-wrap {
+  height: 55vh;
+  max-height: 55vh;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.product-image-wrap img,
+.squircle {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 18px;
+}
+
+@media (max-width: 640px) {
+  .product-image-wrap {
+    height: 40vh;
+    max-height: 40vh;
+  }
+}
+
+/* Print styles: ensure one product per printed page and images scale to fit */
+@media print {
+  @page { size: A4 portrait; margin: 10mm; }
+  body { margin: 0; -webkit-print-color-adjust: exact; color-adjust: exact; }
+
+  /* utility to hide elements in print */
+  .no-print { display: none !important; }
+
+  /* make each product wrapper force a page break after it */
+  .print-page { page-break-after: always; break-after: page; page-break-inside: avoid; break-inside: avoid; max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+
+  /* make the product card occupy the printable page area and request printed backgrounds */
+  .product-card {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-color: #cfcfcf !important;
+    color: #000 !important;
+    /* limit to printable page height to avoid spilling to next page */
+    max-height: calc(297mm - 20mm);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    page-break-inside: avoid;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Avoid forcing a new page after the last printed product to prevent trailing blank/bleed */
+  .print-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  /* relax the aspect ratio in print and size the image to fit the page */
+  .product-image-wrap { aspect-ratio: auto !important; height: calc(297mm * 0.55) !important; max-height: calc(297mm * 0.55) !important; overflow: visible !important; }
+
+  .product-card img { max-width: 100% !important; width: auto !important; height: calc(297mm * 0.55) !important; object-fit: contain !important; display: block; margin: 0 auto; border-radius: 6mm !important; }
+
+  /* remove visual chrome */
+  .print-page .shadow-sm { box-shadow: none !important; }
+  .print-page .rounded-2xl, .print-page .rounded-[28px] { border-radius: 0 !important; }
+
+  button { display: none !important; }
+}

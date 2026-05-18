@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Decor Chronicle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700,800,900&display=swap" rel="stylesheet">
+
+<style>
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    font-family: 'Montserrat', Arial, sans-serif;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+/* ========================= 
+   PAGE & BACKGROUND
+========================= */
+
+.page {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+
+    /* Recreates the gray textured background from the reference */
+    background-color: #b0b0b0;
+    background-image:
+        /* Subtle noise texture via SVG filter fallback */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E");
+    background-size: cover, 200px 200px;
+}
+
+/* Fallback: if background.png exists, it will override */
+.page.has-bg-image {
+    background-image: url("src/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================
+   HEADER / TITLE
+========================= */
+
+.logo-title {
+    position: absolute;
+    top: 7mm;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    font-family: 'Bebas Neue', 'Impact', 'Arial Black', sans-serif;
+    font-size: 28mm;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 1;
+
+    /* Matches the bold white text with slight shadow from reference */
+    text-shadow:
+        2px 2px 0px rgba(0,0,0,0.15),
+        0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* =========================
+   WEBSITE ROW
+========================= */
+
+.website-row {
+    position: absolute;
+    top: 43mm;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3mm;
+
+    font-size: 6.5mm;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.website-icon {
+    width: 8mm;
+    height: 8mm;
+}
+
+/* Inline globe emoji fallback if image missing */
+.globe-emoji {
+    font-size: 7mm;
+    line-height: 1;
+}
+
+
+/* =========================
+   WHATSAPP ROW
+========================= */
+
+.whatsapp-row {
+    position: absolute;
+    top: 53mm;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3mm;
+
+    font-size: 6.5mm;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.whatsapp-icon {
+    width: 8mm;
+    height: 8mm;
+}
+
+.whatsapp-emoji {
+    font-size: 7mm;
+    line-height: 1;
+}
+
+
+/* =========================
+   PRODUCT IMAGE BOX
+========================= */
+
+.product-box {
+    position: absolute;
+    top: 68mm;
+    left: 16mm;
+    width: 178mm;
+    height: 142mm;
+
+    border-radius: 18mm;
+    overflow: hidden;
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Subtle shadow to lift off background */
+    box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+}
+
+.product-image{
+    max-width:100%;
+    max-height:100%;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+}
+
+/* =========================
+   DETAILS SECTION
+========================= */
+
+.details {
+    position: absolute;
+    top: 220mm;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5mm;
+}
+
+.detail-row {
+    width: 100%;
+    text-align: center;
+
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 7.2mm;
+    font-weight: 800;
+    color: #1a1a1a;
+
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.25;
+
+    padding-left: 12mm;
+    padding-right: 12mm;
+
+    word-break: break-word;
+}
+
+
+/* =========================
+   PRICE BOX
+========================= */
+
+.price-box {
+    position: absolute;
+    bottom: 12mm;
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: 80mm;
+    padding: 4.5mm 14mm;
+
+    border-radius: 12mm;
+
+    background: radial-gradient(ellipse at top, #2e2e38 0%, #16161c 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        inset 0 0 14px rgba(255,255,255,0.06),
+        0 6px 24px rgba(0,0,0,0.45);
+
+    white-space: nowrap;
+}
+
+.price-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14mm;
+    font-weight: 900;
+    color: #b56d9e;
+    letter-spacing: 1px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+{% for product in products %}
+
+<div class="page">
+
+    <!-- TITLE -->
+    <div class="logo-title">DECOR CHRONICLE</div>
+
+    <!-- WEBSITE -->
+    <div class="website-row">
+        <img
+            class="website-icon"
+            src="src/globe.png"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+        >
+        <span class="globe-emoji" style="display:none;">🌐</span>
+        <span>www.decorchronicle.com</span>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="whatsapp-row">
+        <img
+            class="whatsapp-icon"
+            src="src/whatsapp.png"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+        >
+        <span class="whatsapp-emoji" style="display:none;">💬</span>
+        <span>+91 8595626577</span>
+    </div>
+
+    <!-- PRODUCT IMAGE -->
+    <div class="product-box">
+        <img
+            class="product-image"
+            src="{{ product.image_path }}"
+            alt="Product Image"
+        >
+    </div>
+
+    <!-- DETAILS -->
+    <div class="details">
+        {% for label, value in product.details.items() %}
+            {% if value|string|trim != "" %}
+                <div class="detail-row">
+                    {{ label }} : {{ value }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- PRICE -->
+    <div class="price-box">
+        <div class="price-text">
+            ₹{{ "{:,}".format(product.price|int) }}/-
+        </div>
+    </div>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

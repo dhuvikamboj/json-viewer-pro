@@ -1,8 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import products from "@/data/products.json";
 import sampleImg from "@/assets/sample-card.jpeg";
 import { exportProductsPdf } from "@/lib/export-pdf";
+
+// Resolve dynamic images from the src/assets folder so we can map
+// runtime `image_path` values to actual URLs the dev server/bundler knows about.
+const imageMap = import.meta.glob('/src/assets/**', { eager: true, as: 'url' }) as Record<string, string>;
+
+function resolveImageSrc(image_path?: string): string {
+  if (!image_path) return sampleImg;
+  // normalize windows backslashes
+  const path = image_path.replace(/\\\\/g, "/").replace(/\\/g, "/").trim();
+
+  // already a data URL
+  if (/^data:/i.test(path)) return path;
+
+  // contains explicit base64 payload (e.g. data:image/png;base64,... or bare base64)
+  if (path.includes("base64,")) return path;
+
+  // heuristic: long string of base64 chars (no slashes/dots), treat as raw base64
+  if (/^[A-Za-z0-9+/=\s]+$/.test(path) && path.length > 128) {
+    return `data:image/png;base64,${path.replace(/\s+/g, "")}`;
+  }
+
+  // try to resolve via vite-generated map
+  const mapKey = `/src/assets/${path}`;
+  if (imageMap[mapKey]) return imageMap[mapKey];
+
+  // fallback to public assets path
+  return `/assets/${path}`;
+}
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,7 +62,7 @@ function Card({ p }: { p: Product }) {
 
   return (
     <article
-      className="rounded-2xl overflow-hidden flex flex-col shadow-sm"
+      className="product-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
       style={{
         backgroundColor: "#cfcfcf",
         backgroundImage:
@@ -70,11 +98,11 @@ function Card({ p }: { p: Product }) {
         </div>
       </header>
 
-      <div className="mx-6 mt-3 rounded-[28px] bg-neutral-900 aspect-[3/4] overflow-hidden">
+      <div className="product-image-wrap mx-6 mt-3 rounded-[28px] bg-neutral-900 aspect-[3/4] overflow-hidden">
         <img
-          src={sampleImg}
+          src={resolveImageSrc(p.image_path)}
           alt={`Product ${p.item_no}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain object-center squircle"
           loading="lazy"
         />
       </div>
@@ -103,24 +131,47 @@ function Card({ p }: { p: Product }) {
 }
 
 function Index() {
-  const data = products as Product[];
-  const [exporting, setExporting] = useState(false);
+  const [data, setData] = useState(products as Product[]);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
-  const handleExport = async () => {
-    setExporting(true);
-    // yield to UI so the button can show loading state
-    await new Promise((r) => setTimeout(r, 50));
+
+
+  const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
     try {
-      exportProductsPdf(data);
+      const text = await file.text();
+      const json = JSON.parse(text as string);
+      let items: Product[] = [];
+      if (Array.isArray(json)) {
+        items = json as Product[];
+      } else if (json && Array.isArray(json.products)) {
+        items = json.products as Product[];
+      } else if (json && Array.isArray(json.data)) {
+        items = json.data as Product[];
+      } else {
+        throw new Error("JSON must be an array or an object with a 'products' or 'data' array");
+      }
+
+      // Normalize backslashes in image paths
+      items = items.map((it) => ({
+        ...it,
+        image_path: typeof it.image_path === "string" ? it.image_path.replace(/\\\\/g, "/").replace(/\\/g, "/") : it.image_path,
+      }));
+
+      setData(items);
+    } catch (err) {
+      console.error(err);
+      alert(`Failed to parse JSON: ${err instanceof Error ? err.message : String(err)}`);
     } finally {
-      setExporting(false);
+      if (fileInputRef.current) fileInputRef.current.value = "";
     }
   };
 
   return (
     <main className="min-h-screen bg-muted/40 py-10 px-4">
       <div className="max-w-7xl mx-auto">
-        <header className="mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <header className="mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 print:hidden no-print">
           <div>
             <h1 className="text-4xl font-extrabold tracking-tight">
               Decor Chronicle Catalogue
@@ -129,19 +180,43 @@ function Index() {
               {data.length} products · Tag {data[0]?.tag_id}
             </p>
           </div>
-          <button
-            onClick={handleExport}
-            disabled={exporting}
-            className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-neutral-800 disabled:opacity-60"
-          >
-            {exporting ? "Generating PDF…" : "Export PDF"}
-          </button>
+          <div className="flex items-center gap-3">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json,application/json"
+              className="hidden"
+              onChange={handleFileSelect}
+            />
+
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="inline-flex items-center justify-center rounded-full bg-neutral-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-600 no-print"
+            >
+              Upload JSON
+            </button>
+
+            <button
+              onClick={() => setData(products as Product[])}
+              className="inline-flex items-center justify-center rounded-full bg-neutral-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-600 no-print"
+            >
+              Reset
+            </button>
+
+        
+          </div>
         </header>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {data.map((p, i) => (
-            <Card key={`${p.item_no}-${i}`} p={p} />
-          ))}
+        <section className="flex flex-col items-center space-y-6">
+          {data.length === 0 ? (
+            <p className="text-muted-foreground">No products available</p>
+          ) : (
+            data.map((p, i) => (
+              <div key={`${p.item_no}-${i}`} className="w-full max-w-4xl print-page">
+                <Card p={p} />
+              </div>
+            ))
+          )}
         </section>
       </div>
     </main>
